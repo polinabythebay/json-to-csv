@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON TO CSV converter</title>
+  <script type="text/javascript" src="assets/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+  <h1> JSON to CSV converter</h1>
+
+  <section class="json">
+    <p>
+      <span class="instruction editing">
+        Put your JSON here
+      </span>
+
+      <span class="instruction rendered">
+        Select your JSON to edit
+      </span>
+
+      <span class="save">
+        <a href="#">Create a permalink</a>
+      </span>
+    </p>
+
+    <div class="areas">
+      <textarea class="editing"></textarea>
+      <pre class="rendered"><code></code></pre>
+      <div class="drop">PUT JSON HERE</div>
+    </div>
+  </section>
+
+  <section class=csv>
+    <p>
+      <span class="rendered">
+        Below are the first few rows (<span class="rows count"></span> total).
+      <a download="result.csv" href="#" class="download">
+        Download the entire CSV</a>
+      </span>
+
+      <span class="editing">
+        Your JSON will appear below as a table.
+      <span>
+    </p>
+
+    <div class="areas">
+      <textarea class="editing" readonly></textarea>
+      <div class="tabled rendered">
+        <table></table>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
